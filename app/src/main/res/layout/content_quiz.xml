@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<RelativeLayout
+
+    android:orientation="vertical"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:layout_height="match_parent"
+
+    android:layout_width="match_parent"
+
+    tools:showIn="@layout/activity_quiz"
+    android:id="@+id/content_quizz"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="@color/whiteAccent">
+
+
+    <TextView
+
+        android:id="@+id/question"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/choice1"
+
+        android:layout_alignRight="@+id/choice1"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+
+        android:layout_marginEnd="-5dp"
+
+        android:layout_marginRight="-5dp"
+        android:text="Question:"
+        android:textAlignment="center"
+        android:textColor="@color/blackAccent"
+        android:textSize="23dp"
+        tools:fontFamily="@font/arbutus" />
+
+
+    <Button
+
+        android:id="@+id/choice1"
+
+        android:layout_width="360dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="198dp"
+
+        android:background="@drawable/rounded_bttn"
+
+        android:onClick="onClick"
+
+        android:text="A" />
+
+
+    <Button
+
+        android:id="@+id/choice2"
+
+        android:layout_width="360dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/choice3"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="3dp"
+
+        android:layout_marginTop="258dp"
+
+        android:background="@drawable/rounded_bttn"
+        android:onClick="onClick"
+        android:text="B" />
+
+
+    <Button
+
+        android:id="@+id/choice3"
+
+        android:layout_width="360dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/question"
+
+        android:layout_alignRight="@+id/question"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="-6dp"
+
+        android:layout_marginRight="-6dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/rounded_bttn"
+        android:onClick="onClick"
+        android:text="C" />
+
+
+    <Button
+
+        android:id="@+id/choice4"
+
+        android:layout_width="360dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/question"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginEnd="4dp"
+
+        android:layout_marginBottom="49dp"
+
+        android:background="@drawable/rounded_bttn"
+        android:onClick="onClick"
+        android:text="D"
+        android:layout_alignRight="@+id/question"
+        android:layout_marginRight="4dp" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/theQuestion"
+            android:layout_width="221dp"
+            android:layout_height="34dp"
+            android:layout_alignEnd="@+id/question"
+            android:layout_alignRight="@+id/question"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:text="The Question"
+            android:textColor="@color/blackAccent"
+            android:textSize="20dp"
+            tools:fontFamily="@font/arbutus"
+            tools:ignore="NotSibling" />
+
+
+    <TextView
+        android:id="@+id/theAmountOfQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:text="TextView"
+        android:textColor="@color/blackAccent" />
+
+    <TextView
+        android:id="@+id/theScore"
+        android:layout_width="115dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@+id/theQuestion"
+        android:layout_alignEnd="@+id/choice1"
+        android:layout_alignRight="@+id/choice1"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginRight="-15dp"
+        android:text="Score: 0"
+        android:textColor="@color/blackAccent"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:context=".SongsSubTopics"
+
+    tools:showIn="@layout/activity_songs_sub_topics"
+
+    android:background="#000000">
+
+
+
+    <TextView
+
+        android:id="@+id/category_lbl"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="45dp"
+
+        android:text="Songs"
+
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+
+        android:textColor="@color/whiteAccent"
+
+        tools:fontFamily="@font/arbutus" />
+
+
+
+    <Button
+
+        android:id="@+id/org_lbl"
+
+        android:layout_width="360dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="69dp"
+
+        android:background="@drawable/rounded_bttn"
+
+        android:text="@string/orgStr"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" />
+
+
+
+    <Button
+
+        android:id="@+id/soj_lbl"
+
+        android:layout_width="357dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="140dp"
+
+        android:background="@drawable/rounded_bttn"
+
+        android:text="@string/sojStr" />
+
+
+
+    <Button
+
+        android:id="@+id/child_lbl"
+
+        android:layout_width="357dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="213dp"
+
+        android:background="@drawable/rounded_bttn"
+
+        android:text="@string/childStr" />
+
+
+
+</RelativeLayout>

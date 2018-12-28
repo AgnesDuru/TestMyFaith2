@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige">
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="8">
+
+
+    <Button
+        android:id="@+id/log_in_btn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:background="@drawable/rounded_bttn"
+        android:backgroundTint="@color/whiteAccent"
+        android:text="Log in"
+        android:textColor="@color/design_default_color_primary" />
+
+    <EditText
+        android:id="@+id/userName_txt"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:layout_column="1"
+        android:layout_row="5"
+        android:drawableLeft="@drawable/user"
+        android:drawableTint="@color/whiteAccent"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_row="6"
+      android:drawableLeft="@drawable/lock"
+        android:drawableTint="@color/whiteAccent"
+        android:hint=" Password"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF" />
+
+
+
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_row="8"
+        android:background="@drawable/rounded_bttn"
+        android:backgroundTint="@color/whiteAccent"
+        android:text="Sign Up"
+        android:textColor="@color/design_default_color_primary" />
+</GridLayout>
+</RelativeLayout>
